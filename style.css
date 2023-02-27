@@ -1,0 +1,131 @@
+:root {
+    --bg-color: #222222;
+    --font-color: #fff;
+    -btn-font-color: #fff;
+    --btn-color: rgb(61, 132, 61);
+    --btn--hover: rgba(14, 126, 46, 0.685);
+    --border-color: transparent;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+main {
+    width: 513px;
+    margin: auto;
+    padding: 50px 20px; 
+}
+
+h1 {
+    font-weight: normal;
+}
+
+button {
+    display: inline-block;
+    width: 120px;
+    font-family: 'Roboto Mono', monospace;;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.btnSwitchTheme {
+    background-color: transparent;
+    color: var(--font-color);
+    border: 2px solid var(--font-color);
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btnSwitchTheme:hover {
+    border: 2px solid var(--border-color);
+    color: var(--bg-color);
+    background-color: var(--font-color);
+    transition: 0.3s;
+}
+
+#calcBtn {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.inputPrincipal {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid var(--font-color);
+    color: var(--font-color);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.charKey, #equal {
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    color: var(--btn-font-color);
+    background: var(--btn-color);
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.charKey:hover, #equal:hover {
+    background: rgba(14, 126, 46, 0.685);
+}
+
+.btnCopy {
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--font-color);
+    border: 1px solid #222222 ;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sucess {
+    border: 2px solid rgb(11, 105, 11);
+    background-color: transparent;
+    color: rgb(11, 105, 11);
+}
+
+.result {
+    padding: 17px;
+    display: inline-block;
+    width: 337px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid var(--font-color);
+    color: var(--font-color);
+    font-size: 1.1rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#result {
+    margin-top: 20px;
+}
+
